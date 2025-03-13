@@ -29,20 +29,21 @@ There exists several build tolls each has its own pros and cons. Below is a tabl
 
 ## Example: Webpack configuration for bundling react files
 
-const path = require('path')
+```javascript
+const path = require("path");
+
 module.exports = {
-entry: './src/index.tsx',
-output: {
-filename: 'bundle.js',
-path: path.resolve(\_\_dirname, 'dist'),
-},
-module: {
-rules: [
-{ test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/ },
-],
-},
-resolve: { extensions: ['.tsx', '.ts', '.js'] },
-}
+  entry: "./src/index.tsx",
+  output: {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+  },
+  module: {
+    rules: [{ test: /\.tsx?$/, use: "ts-loader", exclude: /node_modules/ }],
+  },
+  resolve: { extensions: [".tsx", ".ts", ".js"] },
+};
+```
 
 This Webpack configuration compiles TypeScript (`.tsx`, `.ts`) files and bundles them into a single output file (`bundle.js`).
 
@@ -62,6 +63,4 @@ Build tools are very important for development purposes, helping to automate tas
 - [The Complete JavaScript Module Bundlers Guide](https://snipcart.com/blog/javascript-module-bundler)
 - [Compiling TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling)
 
-### Author
-
-Jyotirmoy Karmakar
+**Author**: Jyotirmoy Karmakar
