@@ -47,9 +47,6 @@ const BookOverview = ({
           <p>
             Available Books: <span>{availableCopies}</span>
           </p>
-          <p className='text-white' onClick={() => console.log(coverUrl)}>
-            click me
-          </p>
         </div>
 
         <p className='book-description'>{description}</p>
