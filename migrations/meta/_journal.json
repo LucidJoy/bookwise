@@ -15,6 +15,13 @@
       "when": 1741985365781,
       "tag": "0001_faithful_genesis",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1742022985649,
+      "tag": "0002_harsh_lady_mastermind",
+      "breakpoints": true
     }
   ]
 }
