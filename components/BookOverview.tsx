@@ -17,7 +17,6 @@ const BookOverview = ({
   coverUrl,
   videoUrl,
   summary,
-  isLoanedBook,
 }: Book) => {
   return (
     <section className='book-overview'>
